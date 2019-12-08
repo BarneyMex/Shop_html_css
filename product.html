@@ -8,24 +8,93 @@
     <script src="https://kit.fontawesome.com/da93a19180.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="center header">
-        <div class="header__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
-            <form class="header__form" action="#">
-                <div class="browse">Browse</div>
-                <input type="text" class="text_search" placeholder="Search for Item...">
-                <button type="submit" class="search"><img src="img/search.png" alt="search"></button>
-            </form>
+<header class="center header">
+    <div class="header__left">
+        <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+        <form class="header__form" action="#">
+            <div class="browse__list"><a href="#" class="browse">Browse</a>
+                <div class="drop__browse">
+                    <div class="drop__browse-flex">
+                        <h3 class="drop__browse__h3">Women</h3>
+                        <ul class="drop__browse__ul">
+                            <li><a href="#" class="drop__browse__link">Dresses</a></li>
+                            <li><a href="#" class="drop__browse__link">Tops</a></li>
+                            <li><a href="#" class="drop__browse__link">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop__browse__link">Jackets/Coats</a></li>
+                            <li><a href="#" class="drop__browse__link">Blazers</a></li>
+                            <li><a href="#" class="drop__browse__link">Denim</a></li>
+                            <li><a href="#" class="drop__browse__link">Leggings/Pants</a></li>
+                            <li><a href="#" class="drop__browse__link">Skirts/Shorts</a></li>
+                            <li><a href="#" class="drop__browse__link">Accessories </a></li>
+                        </ul>
+                    </div>
+                    <div class="drop__browse-flex">
+                        <h3 class="drop__browse__h3">Men</h3>
+                        <ul class="drop__browse__ul">
+                            <li><a href="#" class="drop__browse__link">Tees/Tank tops</a></li>
+                            <li><a href="#" class="drop__browse__link">Shirts/Polos</a></li>
+                            <li><a href="#" class="drop__browse__link">Sweaters</a></li>
+                            <li><a href="#" class="drop__browse__link">Sweatshirts/Hoodies</a></li>
+                            <li><a href="#" class="drop__browse__link">Blazers</a></li>
+                            <li><a href="#" class="drop__browse__link">Jackets/vests</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <input type="text" class="text_search" placeholder="Search for Item...">
+            <button type="submit" class="search"><img src="img/search.png" alt="search"></button>
+        </form>
+    </div>
+    <div class="header__right">
+        <div class="cart__list"><a href="shopping%20cart.html"><img class="header__cart" src="img/cart.svg" alt="cart"></a>
+            <div class="drop__cart">
+                <div class="drop__cart-flex">
+                    <div class="cart__product">
+                        <div class="cart__photo"><img src="img/Layer_43.jpg" alt=""></div>
+                        <div class="cart__price">
+                            <p class="cart__nameProduct">Rebox Zane</p>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="cart__priceProduct">1  <span class="letterX">x</span>   $250</p>
+                        </div>
+                        <div class="cart__close">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="cart__product">
+                        <div class="cart__photo"><a href="single%20page.html"><img src="img/Layer_44.jpg" alt=""></a></div>
+                        <div class="cart__price">
+                            <p class="cart__nameProduct">Rebox Zane</p>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <p class="cart__priceProduct">1  <span class="letterX">x</span>   $250</p>
+                        </div>
+                        <div class="cart__close">
+                            <i class="fas fa-times-circle"></i>
+                        </div>
+                    </div>
+                    <div class="cart__price__total">
+                        <div>TOTAL</div>
+                        <div>$500.00</div>
+                    </div>
+                    <div class="cart_button"><a href="#" class="cart_button_link">Checkout</a></div>
+                    <div class="cart_button"><a href="shopping%20cart.html" class="cart_button_link">Go to cart</a></div>
+                </div>
+            </div>
         </div>
-        <div class="header__right">
-            <img class="header__cart" src="img/cart.svg" alt="cart">
-            <a href="#" class="button">My Account</a>
-        </div>
-    </header>
+        <a href="#" class="button">My Account</a>
+    </div>
+</header>
     <nav class="center">
         <ul class="menu">
             <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
-            <li class="menu__list"><a href="#" class="menu__link">Man</a></li>
+            <li class="menu__list"><a href="product.html" class="menu__link">Man</a></li>
             <li class="menu__list"><a href="#" class="menu__link">Women</a>
                 <div class="drop">
                     <div class="drop-flex">
@@ -68,11 +137,11 @@
         <h3>New Arrivals</h3>
         <nav class="bread">
             <ul class="bread">
-                <li class="bread__list"><a href="#" class="bread__link">Home</a></li>
+                <li class="bread__list"><a href="index.html" class="bread__link">Home</a></li>
                 <li class="bread__list slash">/</li>
-                <li class="bread__list"><a href="#" class="bread__link">Men</a></li>
+                <li class="bread__list"><a href="product.html" class="bread__link">Men</a></li>
                 <li class="bread__list slash">/</li>
-                <li class="bread__list"><a href="#" class="bread__link active__bread">New Arrivals</a></li>
+                <li class="bread__list"><a href="#" class="bread__link">New Arrivals</a></li>
             </ul>
         </nav>
     </div>
@@ -119,49 +188,44 @@
                 <div class="filter">
                     <h3>Trending now</h3>
                     <div class="trending">
-                        <p class="trending__filter filter__bottom">Bohemian</p>
-                        <p class="tr__slash filter__bottom">|</p>
-                        <p class="trending__filter filter__bottom">Floral</p>
-                        <p class="tr__slash filter__bottom">|</p>
-                        <p class="trending__filter filter__bottom">Lace</p>
-                        <p class="trending__filter">Floral</p>
-                        <p class="tr__slash">|</p>
-                        <p class="trending__filter">Lace</p>
-                        <p class="tr__slash">|</p>
-                        <p class="trending__filter">Bohemian</p>
+                        <a href="#" class="trending__filter filter__bottom">Bohemian</a>
+                        <a href="#" class="tr__slash filter__bottom">|</a>
+                        <a href="#" class="trending__filter filter__bottom">Floral</a>
+                        <a href="#" class="tr__slash filter__bottom">|</a>
+                        <a href="#" class="trending__filter filter__bottom">Lace</a>
+                        <a href="#" class="trending__filter">Floral</a>
+                        <a href="#" class="tr__slash">|</a>
+                        <a href="#" class="trending__filter">Lace</a>
+                        <a href="#" class="tr__slash">|</a>
+                        <a href="#" class="trending__filter">Bohemian</a>
                     </div>
                 </div>
                 <div class="filter">
                     <h3>Size</h3>
                     <form action="#">
-                        <fieldset>
-                            <label for="XXS">
-                                <input id="XXS" type="checkbox"> XXS</label>
-                            <label for="XS">
-                                <input id="XS" type="checkbox"> XS</label>
-                            <label for="S">
-                                <input id="S" type="checkbox"> S</label>
-                            <label for="M">
-                                <input id="M" type="checkbox"> M</label>
-                            <label for="L">
-                                <input id="L" type="checkbox"> L</label>
-                            <label for="XL">
-                                <input id="XL" type="checkbox"> XL</label>
-                            <label for="XXL">
-                                <input id="XXL" type="checkbox"> XXL</label>
+                        <fieldset class="filter__form">
+                            <label for="XXS" class="filter__label">
+                                <input id="XXS" type="checkbox" class="filter__label__input"> XXS</label>
+                            <label for="XS" class="filter__label">
+                                <input id="XS" type="checkbox" class="filter__label__input"> XS</label>
+                            <label for="S" class="filter__label">
+                                <input id="S" type="checkbox" class="filter__label__input"> S</label>
+                            <label for="M" class="filter__label">
+                                <input id="M" type="checkbox" class="filter__label__input"> M</label>
+                            <label for="L" class="filter__label">
+                                <input id="L" type="checkbox" class="filter__label__input"> L</label>
+                            <label for="XL" class="filter__label">
+                                <input id="XL" type="checkbox" class="filter__label__input"> XL</label>
+                            <label for="XXL" class="filter__label">
+                                <input id="XXL" type="checkbox" class="filter__label__input"> XXL</label>
                      </fieldset>
                     </form>
                 </div>
                 <div class="filter">
                     <h3>pRICE</h3>
                     <form action="#">
-                        <fieldset>
-                            <input id="range" class="range" type="range" value="10" step="0.1" />
-                            <br>
-                            <p>
-                                <output name="result" for="range">0</output>
-                            </p>
-                        </fieldset>
+                        <input id="range" class="range" type="range" value="10" step="0.1">
+                        <output name="result" for="range">0</output>
                     </form>
                 </div>
             </div>
@@ -247,7 +311,7 @@
                     <p></p>
                 </div>
                 <div class="view__product">
-                    View All
+                    <a href="#" class="view__link">View All</a>
                 </div>
             </div>
         </div>
@@ -289,14 +353,16 @@
                 <p class="text__subscribe">
                     <span class="important__text__sub">Subscribe</span> <br>FOR OUR NEWLETTER AND PROMOTION
                 </p>
-                <input type="e-mail" value="Enter Your Email" class="e-mail">
-                <!--<input type="button" value="Subscribe" class="button__sub" не хватает времени обдумать>-->
+                <form action="#" class="form__sub">
+                    <input type="text" placeholder="Enter Your Email" class="e-mail">
+                    <input type="button" value="Subscribe" class="button__sub">
+                </form>
             </div>
         </div>
     </div>
     <div class="info center">
         <div class="info__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
             <div class="text__info">
                 <p>
                     Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br><br>
@@ -310,7 +376,7 @@
             <div class="block__info">
                 <p class="pink__info">COMPANY</p>
                 <ul>
-                    <li class="list__info"><a href="#" class="link__info">
+                    <li class="list__info"><a href="index.html" class="link__info">
                         Home 
                     </a></li>
                     <li class="list__info"><a href="#" class="link__info">
@@ -372,11 +438,11 @@
     <footer class="center">
         <div>&copy;&nbsp; 2017  Brand  All Rights Reserved.</div>
         <div class="icon-footer">
-            <div class="icon"><i class="fab fa-facebook-f"></i></div>
-            <div class="icon"><i class="fab fa-twitter"></i></div>
-            <div class="icon"><i class="fab fa-linkedin-in"></i></div>
-            <div class="icon"><i class="fab fa-pinterest-p"></i></div>
-            <div class="icon"><i class="fab fa-google-plus-g"></i></div>
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="icon"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="icon"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </footer>
 </body>
