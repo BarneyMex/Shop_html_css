@@ -8,6 +8,9 @@ body
 a 
   text-decoration: none
 
+button
+  cursor: pointer
+
 .center 
   padding: 0 calc(50% - 570px)
 
@@ -43,11 +46,13 @@ a
   font-weight: 300
   letter-spacing: 0.68px
 
+.logo:hover .letter_D
+  transform: rotate(30deg)
 
 .letter_D 
   color: #f16d7f
   font-weight: 400
-
+  transition: transform 1s
 
 .browse 
   width: 87px
@@ -166,9 +171,9 @@ a
 
 .cart__list
   position: relative
-
-.cart__list:hover .drop__cart
-  display: block
+  transition: transform 0.5s
+  &:hover .drop__cart
+    display: block
 
 .cart__nameProduct
   color: #222222
@@ -215,6 +220,9 @@ a
 
 .cart_button_link:hover
   color: #f16d7f
+
+.cart__list:hover
+  transform: scale(1.1)
 
 .far
   color: #e4af48
@@ -288,7 +296,13 @@ a
   display: flex
   justify-content: center
   align-items: center
-
+  transition: all 0.5s
+  &:hover
+    box-shadow: 0 0 10px #f16d7f
+    transform: scale(1.02)
+  &:active
+    background-color: white
+    color: #f16d7f
 
 .menu 
   list-style-type: none
@@ -447,11 +461,7 @@ a
   align-items: center
 
 
-.button:hover 
-  box-shadow: 0 0 10px grey
 
-.button:active 
-  background-color: grey
 
 .text__actual:hover 
   box-shadow: 0 0 10px grey
@@ -927,13 +937,15 @@ footer
   font-weight: 700
   text-transform: uppercase
   letter-spacing: 0.3px
-
+  transition: all 0.5s
+  display: block
 
 .slash 
   margin: 0 2px
 
 .bread__link:hover 
   color: #f16d7f
+  transform: translateY(-1px)
 
 .bread__link:active 
   color: #636363
@@ -1257,6 +1269,12 @@ li
   margin-left: 308px
   padding: 20px 0
   margin-bottom: 120px
+  transition: all 0.5s
+  &:hover
+    box-shadow: 0 0 10px #f16d7f
+    transform: scale(1.02)
+  &:active
+    box-shadow: none
 
 
 .cart__icon
@@ -1329,5 +1347,188 @@ li
     margin-top: 16px
   &__prod__text__all
     margin: 18px 14px
+
+.also__product__choose:hover
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16)
+
+.big-cart__choose-product
+  margin-top: 90px
+  &_first
+    border-top: none
+  &_last
+    border-bottom: 1px solid #eaeaea
+
+.big-cart__product
+  display: flex
+  border-top: 1px solid #eaeaea
+  &-element
+    width: 130px
+    text-align: center
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    padding: 20px 0
+    &__header
+      color: #222222
+      font-size: 13px
+      font-weight: 700
+      text-transform: uppercase
+      text-align: end
+    &_first
+      flex-grow: 1
+      text-align: start
+      display: flex
+      align-items: center
+    &__value
+      display: flex
+      justify-content: flex-end
+      align-items: center
+      height: 100%
+      padding-right: 20px
+    &__quantity
+      width: 54px
+      height: 30px
+      text-align: center
+      margin-top: 45px
+      margin-left: 60px
+      border: 1px solid #eaeaea
+      color: #656565
+    &__photo
+      margin-right: 20px
+      transition: transform 0.5s
+      &:hover
+        transform: scale(1.1)
+    &__h3
+      color: #222222
+      font-size: 13px
+      font-weight: 600
+      text-transform: uppercase
+      transition: color 0.2s
+      &:hover
+        color: #f16d7f
+    &__p
+      color: #6f6e6e
+      font-size: 13px
+      font-weight: 600
+      margin-top: 40px
+      letter-spacing: 0.5px
+    &__span
+      font-weight: 300
+    &__about
+      text-align: start
+
+.cart-shopping
+  display: flex
+  justify-content: space-between
+  margin-top: 44px
+  margin-bottom: 63px
+  &__text
+    display: block
+    width: 235px
+    height: 50px
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    border: 1px solid #eaeaea
+    text-align: center
+    transition: all 1s
+    &_p
+      padding: 19px 0
+    &:hover
+      color: #f16d7f
+      transform: scale(1.05)
+      border: 1px solid #f16d7f
+
+.cart-form
+  display: flex
+  justify-content: space-between
+  margin-bottom: 80px
+  &__column
+    display: flex
+    flex-direction: column
+  &__label
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+  &__input
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    width: 335px
+    height: 50px
+    margin-top: 20px
+    padding-left: 20px
+    opacity: 0.8
+  &__button
+    border: 1px solid #eaeaea
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 700
+    text-transform: uppercase
+    width: 100px
+    height: 35px
+    margin-top: 20px
+    background-color: #ffffff
+    transition: transform 0.5s
+    &_big
+      width: 118px
+    &:hover
+      transform: scale(1.02)
+  &__select
+    border: 1px solid #eaeaea
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+    width: 355px
+    height: 50px
+    margin-top: 20px
+    padding-left: 20px
+  &__p
+    color: #000000
+    font-size: 14px
+    font-weight: 300
+    margin-top: 28px
+
+.cart__order
+  margin: 43px
+  &_total
+    padding-bottom: 22px
+    border-bottom: 1px solid #e2e2e2
+    text-align: end
+  &_p
+    color: #4a4a4a
+    font-size: 11px
+    font-weight: 400
+    text-transform: uppercase
+  &_h3
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 14px
+  &_span
+    color: #f16d7f
+  &_button
+    width: 273px
+    height: 50px
+    background-color: #f16d7f
+    border-color: #f16d7f
+    color: #ffffff
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    margin-top: 20px
+    transition: transform 0.5s
+    &:hover
+      transform: scale(1.02)
+  &_background
+    background-color: #f5f3f3
+    height: 100%
+  &_price
+    padding-left: 12px
+
 
 
