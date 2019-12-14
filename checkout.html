@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/da93a19180.js" crossorigin="anonymous"></script>
@@ -10,7 +11,7 @@
 <body>
     <header class="center header">
         <div class="header__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
             <form class="header__form" action="#">
                 <div class="browse__list"><a href="#" class="browse">Browse</a>
                     <div class="drop__browse">
@@ -83,7 +84,7 @@
                             <div>TOTAL</div>
                             <div>$500.00</div>
                         </div>
-                        <div class="cart_button"><a href="#" class="cart_button_link">Checkout</a></div>
+                        <div class="cart_button"><a href="checkout.html" class="cart_button_link">Checkout</a></div>
                         <div class="cart_button"><a href="shopping%20cart.html" class="cart_button_link">Go to cart</a></div>
                     </div>
                 </div>
@@ -156,6 +157,62 @@
             </ul>
         </nav>
     </div>
+    <div class="checkout center">
+        <details>
+            <summary class="checkout__summary">01.   Shipping Adress</summary>
+                <div class="checkout__summary__form">
+                    <div class="checkout__form">
+                        <div class="checkout__form_2">
+                            <h3 class="checkout__form_h3">Check as a guest or register</h3>
+                            <p class="checkout__form_p">Register with us for future convenience</p>
+                        </div>
+                        <div class="checkout__form_2">
+                            <p class="checkout__form_h3"><input type="radio" name="radio"/><span class="checkout__form_span">checkout as guest</span></p>
+                            <p class="checkout__form_h3"><input type="radio" name="radio" checked="checked"/><span class="checkout__form_span">register</span></p>
+                        </div>
+                        <div class="checkout__form_2">
+                            <h3 class="checkout__form_h3">register and save time!</h3>
+                            <p class="checkout__form_p">Register with us for future convenience</p>
+                        </div>
+                        <div class="checkout__form_2">
+                            <a class="checkout__form_p" href="#">>>Fast and easy checkout</a>
+                            <a class="checkout__form_p" href="#">>>Easy access to your order history and status</a>
+                        </div>
+                        <button class="checkout__form_button">Continue</button>
+                    </div>
+                    <div class="checkout__form">
+                        <div class="checkout__form_2">
+                            <h3 class="checkout__form_h3">Already registed?</h3>
+                            <p class="checkout__form_p">Please log in below</p>
+                        </div>
+                        <label for="e-mail" class="checkout__form__label">EMAIL ADDRESS <em>*</em></label>
+                        <input type="text" class="checkout__form__label_input" id="e-mail" required pattern="\S+@[a-z]+.[a-z]+">
+                        <label for="password" class="checkout__form__label">PASSWORD <em>*</em></label>
+                        <input type="password" class="checkout__form__label_input" id="password">
+                        <p class="checkout__form_p_red">* Required Fileds</p>
+                        <div class="checkout__form_login checkout__form_2">
+                            <button class="checkout__form_button">Log in</button>
+                            <a href="#" class="checkout__form_forget">Forgot Password ?</a>
+                        </div>
+                    </div>
+                </div>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__summary">02.   BILLING INFORMATION</summary>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__summary">03.   SHIPPING INFORMATION</summary>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__summary">04.   SHIPPING METHOD</summary>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__summary">05.   PAYMENT METHOD</summary>
+        </details>
+        <details class="checkout__details">
+            <summary class="checkout__summary">06.   ORDER REVIEW</summary>
+        </details>
+    </div>
     <div class="subscribe center">
         <div class="subscribe__left">         
             <div class="photo__cust">
@@ -169,6 +226,11 @@
                 <p class="info__customer">
                     <span class="name__cust">Bin Burhan</span> <br> Dhaka, Bd
                 </p>
+                <div class="subscribe__info_bb">
+                    <div class="subscribe__bb"></div>
+                    <div class="subscribe__bb subscribe__bb_active"></div>
+                    <div class="subscribe__bb"></div>
+                </div>
                 </div>
         </div>
         <div class="subscribe__right">
@@ -176,16 +238,16 @@
                 <p class="text__subscribe">
                     <span class="important__text__sub">Subscribe</span> <br>FOR OUR NEWLETTER AND PROMOTION
                 </p>
-                <form action="#" class="form__sub">
+                <div>
                     <input type="text" placeholder="Enter Your Email" class="e-mail">
-                    <input type="button" value="Subscribe" class="button__sub">
-                </form>
+                    <button class="button__sub">Subscribe</button>
+                </div>
             </div>
         </div>
     </div>
     <div class="info center">
         <div class="info__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
             <div class="text__info">
                 <p>
                     Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br><br>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Single page</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/da93a19180.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="center header">
         <div class="header__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
             <form class="header__form" action="#">
                 <div class="browse__list"><a href="#" class="browse">Browse</a>
                     <div class="drop__browse">
@@ -84,7 +84,7 @@
                             <div>TOTAL</div>
                             <div>$500.00</div>
                         </div>
-                        <div class="cart_button"><a href="#" class="cart_button_link">Checkout</a></div>
+                        <div class="cart_button"><a href="checkout.html" class="cart_button_link">Checkout</a></div>
                         <div class="cart_button"><a href="shopping%20cart.html" class="cart_button_link">Go to cart</a></div>
                     </div>
                 </div>
@@ -182,7 +182,7 @@
                     <div class="chooseElements">
                         <label for="COLOR" class="chooseElement">CHOOSE COLOR</label><br><br>
                         <select id="COLOR" class="choose__select">
-                            <option value="Red">Red</option>
+                            <option value="Red"> Red</option>
                             <option value="Blue">Blue</option>
                         </select>
                     </div>
@@ -195,7 +195,7 @@
                     </div>
                     <div class="chooseElements">
                         <label for="quantity" class="chooseElement">quantity</label><br><br>
-                        <input id="quantity" type="text" placeholder="2" class="choose__select choose__quantity">
+                        <input id="quantity" type="number" required min="1" max="10" class="choose__select choose__quantity">
                     </div>
                 </form>
                 <a href="#" class="chooseToCart__add"><img src="img/Forma_1_copy.svg" alt="" class="cart__icon">Add to cart</a>
@@ -248,6 +248,11 @@
                 <p class="info__customer">
                     <span class="name__cust">Bin Burhan</span> <br> Dhaka, Bd
                 </p>
+                <div class="subscribe__info_bb">
+                    <div class="subscribe__bb"></div>
+                    <div class="subscribe__bb subscribe__bb_active"></div>
+                    <div class="subscribe__bb"></div>
+                </div>
                 </div>
         </div>
         <div class="subscribe__right">
@@ -255,16 +260,16 @@
                 <p class="text__subscribe">
                     <span class="important__text__sub">Subscribe</span> <br>FOR OUR NEWLETTER AND PROMOTION
                 </p>
-                <form action="#" class="form__sub">
+                <div>
                     <input type="text" placeholder="Enter Your Email" class="e-mail">
-                    <input type="button" value="Subscribe" class="button__sub">
-                </form>
+                    <button class="button__sub">Subscribe</button>
+                </div>
             </div>
         </div>
     </div>
     <div class="info center">
         <div class="info__left">
-            <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
             <div class="text__info">
                 <p>
                     Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. <br><br>

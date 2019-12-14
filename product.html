@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Man</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -10,7 +11,8 @@
 <body>
 <header class="center header">
     <div class="header__left">
-        <a class="logo" href=""><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
+        <a class="logo" href="index.html
+"><img class="logo__img" src="img/logo.png" alt="logo">BRAN <span class="letter_D">D</span></a>
         <form class="header__form" action="#">
             <div class="browse__list"><a href="#" class="browse">Browse</a>
                 <div class="drop__browse">
@@ -83,7 +85,7 @@
                         <div>TOTAL</div>
                         <div>$500.00</div>
                     </div>
-                    <div class="cart_button"><a href="#" class="cart_button_link">Checkout</a></div>
+                    <div class="cart_button"><a href="checkout.html" class="cart_button_link">Checkout</a></div>
                     <div class="cart_button"><a href="shopping%20cart.html" class="cart_button_link">Go to cart</a></div>
                 </div>
             </div>
@@ -117,6 +119,7 @@
                             <li><a href="#" class="drop__link">Dresses</a></li>
                             <li><a href="#" class="drop__link">Tops</a></li>
                             <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop__link">Jackets/Coats</a></li>
                         </ul>
                         <h3 class="drop__h3">Women</h3>
                         <ul class="drop__ul">
@@ -124,6 +127,16 @@
                             <li><a href="#" class="drop__link">Tops</a></li>
                             <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
                         </ul>
+                    </div>
+                    <div class="drop-flex">
+                        <h3 class="drop__h3">Women</h3>
+                        <ul class="drop__ul">
+                            <li><a href="#" class="drop__link">Dresses</a></li>
+                            <li><a href="#" class="drop__link">Tops</a></li>
+                            <li><a href="#" class="drop__link">Sweaters/Knits</a></li>
+                            <li><a href="#" class="drop__link">Jackets/Coats</a></li>
+                        </ul>
+                        <div class="super__sale"><p class="super__sale__text">Super <br> sale</p></div>
                     </div>
                 </div>
             </li>
@@ -147,41 +160,42 @@
     </div>
     <div class="product__content center">
         <nav class="product__content__nav">
-            <ul>
-                <li class="product__cont__list"><a href="#" class="prod__list">Category</a><!--Не понимаю, то ли знаний пока не хватает сделать этот список выпадающим не через ховер, то ли что-то не поняла. Потом разберусь-->
-                    <div class="prod__flex">
-                        <ul>
-                            <li><a href="#" class="product__cont__link
-                                ">Accessories</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Bags</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Denim</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Hoodies & Sweatshirts</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Jackets & Coats</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Pants</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Polos</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Shirts</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Shoes</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Shorts</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">Sweaters & Knits</a></li>
-                            <li><a href="#" class="product__cont__link
-                                ">T-Shirts</a></li>
-                            <li><a href="#" class="product__cont__link">Tanks</a></li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="product__cont__list"><a href="#" class="prod__list">BRAND</a></li>
-                <li class="product__cont__list"><a href="#" class="prod__list">dESIGNER</a></li>
-            </ul>
+            <details>
+                <summary class="product__cont__list prod__list">Category</summary>
+                    <ul class="product__cont__list_link">
+                        <li><a href="#" class="product__cont__link
+                            ">Accessories</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Bags</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Denim</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Jackets & Coats</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Pants</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Polos</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Shirts</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Shoes</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Shorts</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">Sweaters & Knits</a></li>
+                        <li><a href="#" class="product__cont__link
+                            ">T-Shirts</a></li>
+                        <li><a href="#" class="product__cont__link">Tanks</a></li>
+                    </ul>
+            </details>
+            <details>
+                <summary class="product__cont__list prod__list">BRAND</summary>
+            </details>
+            <details>
+                <summary class="product__cont__list prod__list">dESIGNER</summary>
+            </details>
         </nav>
         <div class="prod__cont__right">
             <div class="top__filter">
@@ -223,14 +237,21 @@
                 </div>
                 <div class="filter">
                     <h3>pRICE</h3>
-                    <form action="#">
+                    <form oninput="result.value=(range.value)" action="#">
                         <input id="range" class="range" type="range" value="10" step="0.1">
                         <output name="result" for="range">0</output>
                     </form>
                 </div>
             </div>
             <div class="sort">
-                
+                <label for="sort__name" class="sort__label">Sort By</label>
+                <select id="sort__name" class="sort__select">
+                    <option value="name">Name</option>
+                </select>
+                <label for="sort__page" class="sort__label">Show</label>
+                <select id="sort__page" class="sort__select">
+                    <option value="page">09</option>
+                </select>
             </div>
             <div class="product-box">
                 <div class="product">
@@ -308,7 +329,16 @@
             </div>
             <div class="next__product center">
                 <div class="pages">
-                    <p></p>
+                    <a href="#" class="pages__link"><</a>
+                    <a href="#" class="pages__link">1</a>
+                    <a href="#" class="pages__link">2</a>
+                    <a href="#" class="pages__link">3</a>
+                    <a href="#" class="pages__link">4</a>
+                    <a href="#" class="pages__link">5</a>
+                    <a href="#" class="pages__link">6</a>
+                    <span class="pages__link">...</span>
+                    <a href="#" class="pages__link">20</a>
+                    <a href="#" class="pages__link">></a>
                 </div>
                 <div class="view__product">
                     <a href="#" class="view__link">View All</a>
@@ -346,6 +376,11 @@
                 <p class="info__customer">
                     <span class="name__cust">Bin Burhan</span> <br> Dhaka, Bd
                 </p>
+                <div class="subscribe__info_bb">
+                    <div class="subscribe__bb"></div>
+                    <div class="subscribe__bb subscribe__bb_active"></div>
+                    <div class="subscribe__bb"></div>
+                </div>
                 </div>
         </div>
         <div class="subscribe__right">
@@ -353,10 +388,10 @@
                 <p class="text__subscribe">
                     <span class="important__text__sub">Subscribe</span> <br>FOR OUR NEWLETTER AND PROMOTION
                 </p>
-                <form action="#" class="form__sub">
+                <div>
                     <input type="text" placeholder="Enter Your Email" class="e-mail">
-                    <input type="button" value="Subscribe" class="button__sub">
-                </form>
+                    <button class="button__sub">Subscribe</button>
+                </div>
             </div>
         </div>
     </div>
