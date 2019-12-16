@@ -463,6 +463,7 @@ button
   justify-content: center
   margin-top: 20px
   margin-bottom: 113px
+  transition: all 1s
 
 
 .button__products 
@@ -479,8 +480,11 @@ button
   display: flex
   justify-content: center
   align-items: center
-  transition: all 1s
 
+.browse__icon
+  color: #ffffff
+  font-size: 15px
+  margin-left: 9px
 
 .text__actual:hover 
   box-shadow: 0 0 10px grey
@@ -488,10 +492,10 @@ button
 .text__actual:active 
   box-shadow: none
 
-.button__products:hover 
+.browse__products:hover
   transform: scale(1.02)
 
-.button__products:active 
+.button__products:active
   background-color: #fff
   color: #f16d7f
   transition: all 0.5s
@@ -1006,14 +1010,14 @@ li
   text-transform: uppercase
   height: 37px
   display: block
-  &::after
+  &:hover::after
     display: inline-block
     content: ""
     border-top: 6px solid
     border-right: 5px solid transparent
     border-left: 5px solid transparent
-    margin-top: 3px
-    color: #838383
+    margin-top: 5px
+    color: #f16d7f
     float: right
 
 
@@ -1210,6 +1214,8 @@ li
   font-size: 16px
   font-weight: bold
   &:hover
+    box-shadow: 0 0 10px #f16d7f
+  &:active
     border: 1px solid white
 
 
@@ -1248,7 +1254,25 @@ li
 
 
 .sinPage__slider
-  text-align: center
+  display: flex
+  justify-content: space-around
+  align-items: center
+
+.sinPage__arrow
+  color: #ffffff
+  font-size: 24px
+  font-weight: 400
+  padding: 16px 20px
+  background-color: #2a2a2a
+  opacity: 0.2
+  transition: transform 0.5s
+  &_left
+    margin-left: -20%
+  &_right
+    margin-right: -20%
+  &:hover
+    transform: scale(1.2)
+
 
 .collection
   color: #f16d7f
